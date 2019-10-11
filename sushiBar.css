@@ -1,0 +1,588 @@
+
+/* Navbar Section*/
+
+.info{
+background: #303d51;
+}
+
+body{
+font-family: 'Times New Roman', Times, serif;
+color:#c9c1ac;
+background: url('../images/sushi-bar-background.jpeg')center/cover fixed no-repeat;
+}
+
+
+.primary-color{
+    color:#4286f4
+}
+
+.info{
+    padding-right:7rem!important;
+}
+
+
+.info h2{
+    word-spacing: .6rem;
+}
+
+/* Links */
+
+.info a{
+    font-size: 1rem;
+    margin: 6rem;
+    
+}
+
+.info a:hover{
+  
+    text-decoration: none;
+} 
+
+.fa-facebook{
+    color:#4286f4;
+    transition: all 1s ease-in;
+}
+
+.fa-facebook:hover{
+    color:#4267b2;
+    
+}
+
+.fa-twitter{
+    color:#4286f4;
+    transition: all 1s ease-in;
+}
+
+.fa-twitter:hover{
+    color:#1dcaff;
+}
+
+.fa-instagram{
+    color:#4286f4;
+    transition: all 1s ease-in;
+}
+
+.fa-instagram:hover{
+    color:#8a3ab9;
+   
+}
+
+.fa-yelp{
+    color:#4286f4;
+    transition: all 1s ease-in;
+}
+
+.fa-yelp:hover{
+    color:#c41200;
+}
+
+
+/* End of Links */
+
+
+
+/* End of Navbar Section*/
+
+/* Header Section */
+
+#header{
+    min-height: calc(100vh - 60px);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+    ,url('../images/sushi-bar-background-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.height-90{
+    min-height: calc(100vh - 60px);
+}
+
+.banner h1{
+    border-top:6px dotted #c9c1ac;
+    border-bottom:6px dotted #c9c1ac;
+    animation: fromLeft;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromLeft{
+
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.sushi-bar-name{
+    font-family: 'Charm', cursive;
+}
+
+.first-name-color{
+    color:#4286f4;
+}
+
+.second-name-color{
+    color:#c9c1ac;
+}
+
+.sushi-btn{
+    animation: fromRight;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromRight{
+
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-30px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.main-btn{
+    color:#c9c1ac;
+    font-size: 2rem;
+    border:2px solid #303d51;
+    transition: all .8s ease-in-out;
+}
+
+.main-btn:hover{
+    color:#242424;
+    border:2px solid #4286f4;
+    background: #c9c1ac;
+}
+
+.header-link{
+    display: inline-block;
+    position: absolute;
+    bottom:5%;
+    left:49%;
+    background: #c9c1ac;
+    border-radius: 10px;
+    transition: all 1s ease;
+    animation: fromBottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.header-link:hover{
+    color:#242424;
+}
+
+@keyframes fromBottom{
+
+    0%{
+        transform: translateY(-10px);
+    }
+
+    50%{
+        transform: translateY(10px);
+    }
+
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+/* End of Header Section*/
+
+
+/* Navbar */
+
+.navbar{
+    background: #303d51;
+    padding: 20px 20px;
+    transition: all 1s ease;
+}
+
+.navbar-background{
+    padding: 5px 20px;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    transition: all 1s ease;
+}
+
+.navbar-brand:hover{
+    color:whitesmoke;
+}
+
+.nav-link{
+    color:#4286f4;
+    text-decoration: none;
+    transition: all 2s ease;
+    font-size: 23px;
+}
+
+
+.nav-link:hover{
+    color:whitesmoke;
+}
+
+
+.nav-btn{
+    background: transparent;
+    color:#4286f4;
+    border: 2px solid #d3325f;
+    font-size: 23px;
+    transition: all 2s ease;
+}
+
+
+.nav-btn:hover{
+    color:whitesmoke;
+    border:2px solid #242424;
+    transform: rotate(10deg);
+}
+
+
+.toggler-btn{
+    border:2px solid #d3325f;
+    padding: 5px;
+    transition: all 2s ease;
+}
+
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: #d3325f;
+    transition: all .5s ease;
+}
+
+/* Bars Changed With JavaScript */
+
+.change .bar1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.change .bar2{
+    opacity: 0;
+}
+
+.change .bar3{
+    transform: rotate(45deg) translate(-5px,-8px);
+}
+
+/* Bars Changed With JavaScript */
+
+
+/* End of Navbar */
+
+
+
+/* Menu Items */
+
+.item-container{
+
+    position: relative;
+    /* for the link */
+    overflow: hidden;
+    background: linear-gradient(rgb(0,0,0),rgba(0,0,0));
+    transition:all 2s ease;
+}
+
+.item-img{
+
+    transition: all 2s ease;
+}
+
+.item-container:hover .item-img{
+
+    transform: scale(1.2);
+    opacity: .5;
+}
+
+
+.item-link{
+
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:whitesmoke;
+    font-size:2rem;
+    border-top:3px solid #d3325f;
+    border-bottom:3px solid #d3325f;
+    transition: all 2s ease;
+    opacity:0;
+
+}
+
+
+.item-container:hover .item-link{
+    opacity: 1;
+}
+
+
+.item-link:hover{
+
+    color:#c9c1ac;
+    border: 3px solid #c9c1ac;
+    background: #c9c1ac;
+    color:#242424;
+}
+
+.item-container:hover{
+    outline: 10px solid #d3325f;
+    outline-offset: -.5rem;
+}
+
+
+/* End of Menu Items */
+
+
+/* Menu */
+
+#menu{
+    background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7))
+    ,url('../images/sushi-bar-background-2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.special{
+    border:3px solid #d3325f;
+    position: relative;
+}
+
+
+.special-text{
+    position: absolute;
+    top:0;
+    right:10%;
+    background: #d3325f;
+    padding: 0 0.4rem;
+}
+
+
+.soup-color{
+   color: #2f5da3;
+}
+
+.soup-type{
+    color:black!important;
+}
+
+.sashimi-color{
+    color:rgb(223, 16, 16);
+}
+
+.sushi-color{
+    color:rgb(5, 189, 5);
+}
+
+.rolls-color{
+    color:rgb(194, 128, 4);
+}
+
+/* End of Menu */
+
+
+/* About Us Section */
+
+.about-pictures{
+    position: relative;
+}
+
+.about-image{
+    position: absolute;
+    width: 150px;
+    transition:all 2s ease;
+    opacity: .9;
+}
+
+.nagoya-sushi-bar{
+    left:0%;
+    top:0%;
+}
+
+.rock-star-sushi-bar{
+    left:20%;
+    top:20%;
+    z-index: 10;
+}
+
+.sushi-bar-totushi{
+    left:40%;
+    top:45%;
+    z-index: 20;
+}
+
+.special-sushi-box-box{
+    left:40%;
+    top:0%;
+}
+
+.yatta-sushi{
+    left:0%;
+    top:45%;
+}
+
+.about-image:hover{
+    outline:10px solid #d3325f;
+    outline-offset: .8rem;
+    transform:scale(1.2) rotate(20deg);
+    z-index: 30;
+    opacity: 1;
+}
+
+.about-pictures:hover .about-image:not(:hover){
+    opacity:.5;
+}
+
+.about-first-name-color{
+    color:#274168;
+}
+
+.about-second-name-color{
+    color:#bb1444;
+}
+
+.about-us-text-color{
+    color:black!important;
+}
+
+
+.about-main-btn{
+    color:#274168;
+    font-size: 2rem;
+    border:2px solid #303d51;
+    transition: all .8s ease-in-out;
+}
+
+.about-main-btn:hover{
+    color:#242424;
+    border:2px solid #4286f4;
+    background: #c9c1ac;
+}
+
+
+
+/* End of About Us Section */
+
+
+/* Reviews Section */
+
+.review-item{
+    background: #303d51;
+    padding-right:7rem!important;
+    clip-path: polygon(5% 0, 100% 0, 94% 100%, 0 100%);
+}
+
+.review-img{
+    width:150px;
+}
+
+.review-text-color{
+    color:whitesmoke!important;
+}
+
+
+/* End of Reviews Section */
+
+
+/* Team Members Section */
+
+.dream-team{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 55px;
+    color:#303d51;
+}
+
+.team-icons a{
+    color:#3b5998;
+    transition: all 2s ease-in-out;
+}
+
+.team-icons a:hover{
+    color:#242424;
+    transform: translateY(-5px);
+}
+
+
+/* End of Team Members Section */
+
+
+/* Contact Section */
+
+.height-60{
+    min-height: 60vh;
+}
+
+#contact .card {
+    background: rgba(0,0,0,0.5);
+    transition: all 1.5s ease;
+}
+
+#contact .card:hover{
+    background: rgba(0,0,0,0.8);
+}
+
+#contact .card-header{
+    color:#c9c1ac;
+    transition: all 1.5s ease;
+}
+
+#contact .card-header:hover{
+    color:#d3325f;
+    
+}
+
+#contact .input-group-text{
+    background: #d3325f;
+    border-color: #d3325f;
+    color:#242424;
+}
+
+#contact .card-input{
+    color:#606060;
+}
+
+#contact .card-input::placeholder{
+    color:#606060;
+}
+
+.contact-btn{
+    color:#d3325f;
+    border-color: #d3325f;
+    background: transparent;
+    transition: all 1.5s ease-in-out;
+}
+
+.contact-btn:hover{
+    background: #c9c1ac;
+    color:#d3325f;
+    border-color:#c9c1ac;
+}
+
+/* End of Contact Section */
+
+
+
